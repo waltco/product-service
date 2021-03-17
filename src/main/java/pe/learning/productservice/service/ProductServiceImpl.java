@@ -1,12 +1,14 @@
 package pe.learning.productservice.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.learning.productservice.entity.Product;
 import pe.learning.productservice.repository.ProductRepository;
 
 import java.util.List;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
