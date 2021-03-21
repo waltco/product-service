@@ -31,7 +31,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     @Transactional(readOnly = true)
-    public Product findById(Long id) {
+    public Product findById(Long id)  {
+
         log.info(port);
         return productRepository.findById(id).orElse(new Product());
     }

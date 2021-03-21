@@ -23,7 +23,10 @@ public class ProductController {
     }
 
     @GetMapping("/product/{id}")
-    public Product findById(@PathVariable Long id) {
+    public Product findById(@PathVariable Long id) throws Exception {
+        if(true){
+            throw new Exception("Error");
+        }
         return productService.findById(id);
     }
 
