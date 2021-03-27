@@ -24,9 +24,7 @@ public class ProductController {
 
     @GetMapping("/product/{id}")
     public Product findById(@PathVariable Long id) throws Exception {
-        if(true){
-            throw new Exception("Error");
-        }
+        Thread.sleep(3000L);
         return productService.findById(id);
     }
 
